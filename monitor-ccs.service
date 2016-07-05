@@ -1,0 +1,15 @@
+[Unit]
+Description=romecast monitoring service
+After=syslog.target
+After=network.target
+After=services-setup.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/monitor-ccs.py
+Restart=always
+User=openhab
+Group=openhab
+
+[Install]
+WantedBy=default.target
