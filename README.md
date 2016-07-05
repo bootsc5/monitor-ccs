@@ -34,3 +34,6 @@ Example: mosquitto_sub -t "chromecast/Bedroom-CC/series_title"
 Commands that take additional parameters are set_volume and cast.  Parameters are seperated by a '|' character.
 
 Example: mosquitto_pub -t "chromecast/Bedroom-CC/command" -m "set_volume|75"
+
+
+Some additional OpenHAB specific configuration information can be found here: https://www.reddit.com/r/homeautomation/comments/4fc01z/quick_question_for_openhab_users/
